@@ -27,7 +27,7 @@ Check out the source code in the following directory hierarchy.
     git clone https://github.com/divicoin/gitian.sigs.git
     git clone https://github.com/divicoin/divi-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/DiviDomains/Divi.git divi
+    git clone https://github.com/DiviProject/Divi.git divi
 
 The `gitian.sigs` and `divi-detached-sigs` repositories above are the old
 ones and have not been recreated yet; see
@@ -249,6 +249,6 @@ are left out of `SHA256SUMS` and should not be uploaded.  See
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/DiviDomains/Divi/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/DiviProject/Divi/releases/new) with a link to the archived release notes.
 
   - Celebrate

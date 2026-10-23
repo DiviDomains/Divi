@@ -15,7 +15,7 @@ other downloaders check before they run a coin's node software.
 What a release contains
 -----------------------
 
-A release lives at `https://github.com/DiviDomains/Divi/releases/tag/v<version>`
+A release lives at `https://github.com/DiviProject/Divi/releases/tag/v<version>`
 and has these files attached:
 
 | File | What it is |
@@ -31,7 +31,7 @@ and has these files attached:
 that, with no version in the name, so a downloader can build its URL from the
 version alone:
 
-    https://github.com/DiviDomains/Divi/releases/download/v<version>/SHA256SUMS
+    https://github.com/DiviProject/Divi/releases/download/v<version>/SHA256SUMS
 
 The signature is inline (clearsigned), so there is one file to download, not
 a separate `.asc`.  Debug archives (`*-debug*`) are not listed and should not

@@ -21,9 +21,10 @@ Divi Core is released under the terms of the MIT license. See https://opensource
 ## Releases and verification
 ---
 
-Releases are published at https://github.com/DiviDomains/Divi/releases.  Each
-release carries a `SHA256SUMS` file signed by a release builder, so you can
-check that what you downloaded is exactly what the builder published.  See
+Releases are published at https://github.com/DiviProject/Divi/releases.  Each
+release is to carry a `SHA256SUMS` file signed by a release builder, so you can
+check that what you downloaded is exactly what the builder published (v3.0.0
+predates this and has none yet).  See
 [release-signing.md](./divi/doc/release-signing.md) for how to check a release
 and how releases are made, and [MAINTAINERS.md](./MAINTAINERS.md) for who looks
 after this repository.
