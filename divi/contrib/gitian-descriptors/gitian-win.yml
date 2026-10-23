@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/DiviProject/Divi"
+- "url": "https://github.com/DiviDomains/Divi"
   "dir": "divi"
 files: []
 script: |
