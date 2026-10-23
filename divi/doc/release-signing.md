@@ -9,8 +9,8 @@ with PGP.  Anyone who downloads a release can check that:
 2. each downloaded archive has the hash listed inside the signed part of
    `SHA256SUMS`.
 
-This is the same scheme Firo and Navcoin use, and it is what BasicSwap and
-other downloaders check before they run a coin's node software.
+Exchanges, wallets and other programs that download Divi can check a
+release this way before they run it.
 
 What a release contains
 -----------------------
@@ -86,8 +86,9 @@ Becoming a builder
 ------------------
 
 See [contrib/gitian-keys/README.md](../contrib/gitian-keys/README.md): add your
-public key there in a pull request, then submit it to BasicSwap's
-`basicswap/pgp/keys/` so BasicSwap trusts your signature too.
+public key there in a pull request.  Programs that check Divi releases
+keep their own copy of the builder keys, so tell their maintainers when a
+key is added or removed.
 
 Stronger: more than one builder
 -------------------------------
@@ -106,4 +107,4 @@ trust any single builder.  The path there:
 
 Code signing for macOS and Windows (`divi-detached-sigs`, the `*-signer.yml`
 descriptors) is a separate step that needs Apple and Windows certificates.
-It is not needed for BasicSwap and is not set up.
+It is not needed to check a release with `SHA256SUMS` and is not set up.

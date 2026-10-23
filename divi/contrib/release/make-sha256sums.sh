@@ -8,7 +8,7 @@
 #
 # The output is a single file named SHA256SUMS whose signature is inline
 # (clearsigned).  That one file is what gets attached to the GitHub release,
-# and it is what BasicSwap and other downloaders verify.
+# and it is what exchanges, wallets and other downloaders verify.
 
 set -euo pipefail
 

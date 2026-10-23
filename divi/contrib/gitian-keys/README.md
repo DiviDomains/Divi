@@ -25,8 +25,9 @@ Adding your key
    the full 40-character fingerprint and say where else you have published it
    (for example your GitHub profile or keys.openpgp.org) so others can cross-check.
 
-3. Once merged, also submit the same key to BasicSwap
-   (`basicswap/pgp/keys/divi_<your-name>.pgp`) so it can check Divi releases.
+3. Programs that check Divi releases, such as exchanges and wallets, keep
+   their own copy of these keys.  Once merged, let their maintainers know so
+   they can add yours.
 
 Removing a key
 --------------
