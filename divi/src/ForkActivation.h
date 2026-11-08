@@ -25,6 +25,11 @@ enum Fork
   CheckLockTimeVerify,
   DeprecateMasternodes,
   LimitTransferVerify,
+  /* Post-quantum lockstep forks (DIP-PQ-2, DIP-PQ-3, DIP-PQ-4; consensus-inert until activation). */
+  HybridSporkV2,
+  PostQuantumWitnessAndVaults,
+  PostQuantumBlockSig,
+  StrictPostQuantumBlockSig,
 };
 
 /**

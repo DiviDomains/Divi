@@ -146,6 +146,9 @@ BITCOIN_CORE_H = \
   primitives/transaction.h \
   core_io.h \
   crypter.h \
+  crypter_pq.h \
+  pqcrypto/divi_pqcrypto.h \
+  PqBlockSigning.h \
   obfuscation.h \
   MasternodeModule.h \
   MasternodeBroadcastFactory.h \
@@ -334,11 +337,13 @@ BITCOIN_CORE_H = \
   script/sigcache.h \
   script/sign.h \
   script/StakingVaultScript.h \
+  script/PqStakingVaultScript.h \
   script/standard.h \
   script/script_error.h \
   serialize.h \
   Secp256k1Context.h \
   spork.h \
+  spork_pq.h \
   sporkdb.h \
   spentindex.h \
   StoredMasternodeBroadcasts.h \
@@ -441,6 +446,7 @@ libbitcoin_server_a_SOURCES = \
   BIP9ActivationFeatureContainer.cpp \
   BlockRewards.cpp \
   BlockSigning.cpp \
+  PqBlockSigning.cpp \
   BlockIndexLotteryUpdater.cpp \
   CachedBIP9ActivationStateTracker.cpp \
   bloom.cpp \
@@ -587,6 +593,7 @@ libbitcoin_wallet_a_SOURCES = \
   DatabaseWrapper.cpp \
   crypto/aes.cpp \
   crypter.cpp \
+  crypter_pq.cpp \
   keypool.cpp \
   LegacyBlockSubsidies.cpp \
   Logging-wallet.cpp \
@@ -683,7 +690,9 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sph_skein.h \
   crypto/sph_types.h \
   crypto/sha512.cpp \
-  crypto/sha512.h
+  crypto/sha512.h \
+  pqcrypto/divi_pqcrypto.h \
+  pqcrypto/divi_pqcrypto.c
 
 # univalue JSON library
 univalue_libbitcoin_univalue_a_SOURCES = \
@@ -732,11 +741,15 @@ libbitcoin_common_a_SOURCES = \
   script/opcodes.cpp \
   script/script.cpp \
   script/StakingVaultScript.cpp \
+  script/PqStakingVaultScript.cpp \
   script/sign.cpp \
   script/standard.cpp \
   script/script_error.cpp \
   Secp256k1Context.cpp \
   spork.cpp \
+  spork_pq.cpp \
+  crypter_pq.cpp \
+  PqBlockSigning.cpp \
   sporkdb.cpp \
   blockmap.cpp \
   $(BITCOIN_CORE_H)
